@@ -183,5 +183,6 @@ body {
 .portfolio-btn-act:focus,
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+  color: #ffffff;
   background-color: var(--text-link-act);
 }
