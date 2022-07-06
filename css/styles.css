@@ -6,18 +6,23 @@
   --text-link-act: #2196f3;
   --text-color-main: #212121;
   --text-color: #757575;
+  --logo-color: #000000;
 }
 
 body {
   font-family: var(--main-font);
   font-size: 14px;
-  color: var(--text-color-main);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 .btn {
   cursor: pointer;
+  font-family: inherit;
 }
 .link {
   text-decoration: none;
+  color: currentColor;
 }
 .list {
   list-style: none;
@@ -27,11 +32,10 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--text-link-act);
 }
 .logo-header {
-  color: #000000;
+  color: var(--logo-color);
 }
 .logo-footer {
   color: #ffffff;
@@ -39,40 +43,33 @@ body {
 .footer {
   background-color: #2f303a;
 }
-.address-map {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-.contacts-footer {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.address {
+  font-style: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts-header {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+.address-link[target='_blank'] {
+  color: #ffffff;
 }
-.active {
+/*.address-link {
+  font-style: normal;
+  color: #ffffff;
+}*/
+.header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--text-link-act);
 }
-.menu {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.nav {
   color: var(--text-color-main);
 }
+.active {
+  color: var(--text-link-act);
+}
+
 .hero {
   background-color: #2f303a;
 }
-.title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -93,21 +90,15 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-.portfolio-btn {
+.filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(-text-color-main);
   background-color: #f5f4fa;
 }
-.portfolio-btn-act {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
+.current {
   color: #ffffff;
   background-color: var(--text-link-act);
 }
@@ -115,74 +106,61 @@ body {
 .hero-btn:focus {
   background-color: #188ce8;
 }
-.headline {
+.description-item {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-main);
 }
-.text {
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-.about {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-color-main);
 }
 .team {
   background-color: #f5f4fa;
 }
+.team-prof,
+.team-name {
+  font-size: 16px;
+  line-height: 1.19;
+}
 .team-name {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--text-color-main);
 }
-.team-prof {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
+
 .text-none {
   display: none;
 }
-.text-title-filter {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color-main);
 }
-.text-filter {
+.portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
 }
-.active:hover,
-.active:focus,
-.menu:hover,
-.menu:focus,
-.contacts-header:hover,
-.contacts-header:focus,
-.address-map:hover,
-.address-map:focus,
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.address-link:hover,
+.address-link:focus,
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--text-link-act);
 }
-.portfolio-btn-act:hover,
-.portfolio-btn-act:focus,
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.current:hover,
+.current:focus,
+.filter-btn:hover,
+.filter-btn:focus {
   color: #ffffff;
   background-color: var(--text-link-act);
 }
